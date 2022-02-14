@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="fontawesome-free-5.12.0-web/css/all.css"
+    />
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&family=Roboto:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>YouTube's video player page</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-div" id="start">
+        <a href="">
+          <i class="fas fa-bars" id="fa-bars"></i>
+        </a>
+        <a href="https://www.youtube.com/">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <p>YouTube</p>
+      </div>
+      <div class="header-div center" id="center">
+        <div class="input-search">
+          <form action="" id="search-form">
+            <input type="text" placeholder="Search" />
+          </form>
+          <div class="search">
+            <a href="">
+              <i class="fas fa-search"></i>
+            </a>
+          </div>
+        </div>
+
+        <a href="" class="microphone">
+          <i class="fas fa-microphone"></i>
+        </a>
+      </div>
+      <div class="header-div end" id="end">
+        <i class="fas fa-video"></i>
+        <i class="fas fa-bars"></i>
+        <i class="far fa-bell"></i>
+        <i class="fas fa-user"></i>
+      </div>
+    </header>
+    <div id="content-container">
+      <div id="primary">
+        <div id="video-container">
+          <iframe
+            id="video"
+            width="1172"
+            height="720"
+            src="https://www.youtube.com/embed/hXg33T_3pxE"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div id="video-info">
+          <h1>
+            George & Nicky get their hands on our 2021 Umbro team kit | Williams
+            Racing
+          </h1>
+          <div id="info">
+            <div id="info-text">
+              <div id="count">
+                <p>65,736 views</p>
+              </div>
+              <div id="info-string">
+                <p><span>&#8226;</span> Feb 28, 2014</p>
+              </div>
+            </div>
+            <div id="info-menu">
+              <div>
+                <a href="" class="info-menu-link"
+                  ><i class="far fa-thumbs-up"><span>34K</span></i></a
+                >
+              </div>
+              <div>
+                <a href="" class="info-menu-link"
+                  ><i class="far fa-thumbs-down"><span>dislike</span></i></a
+                >
+              </div>
+              <div>
+                <a href="" class="info-menu-link"
+                  ><i class="fas fa-share"><span>share</span></i></a
+                >
+              </div>
+              <div>
+                <a href="" class="info-menu-link"
+                  ><i class="fas fa-download"><span>download</span></i></a
+                >
+              </div>
+              <div>
+                <a href="" class="info-menu-link" id="info-menu-ellipsis"
+                  ><i class="fas fa-ellipsis-h"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="video-description">
+          <div id="video-description-content">
+            <div id="description-content">
+              <div id="video-author">
+                <a href="" class="user-name-link">
+                  <p>U</p>
+                </a>
+              </div>
+              <div id="upload-info">
+                <div id="channel-name">
+                  <a href=""><h4>Williams Racing</h4></a>
+                </div>
+                <div id="subsriber-count">
+                  <p>166K subscribers</p>
+                </div>
+              </div>
+              <div id="subscribe-button">
+                <a href="">
+                  <button id="subscribe-btn">subscribe</button>
+                </a>
+              </div>
+            </div>
+            <div id="description-text">
+              <div id="main-text">
+                <p>
+                  We welcome Umbro as a technical team kit supplier for 2021 at
+                  Williams Racing. The start of a new Formula One season brings
+                  plenty of excitement with new cars, livery, and team kit all
+                  launched in the months of February and March. We let our
+                  drivers George Russell and Nicholas Latifi get their hands on
+                  our new kit.
+                </p>
+              </div>
+              <div id="show-more">
+                <p>Show more</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="comments">
+          <div id="comments-header">
+            <div id="comment-title">
+              <h3 id="comment-count">187 Comments</h3>
+              <a href="" id="sort-icon"
+                ><i class="fas fa-sort-amount-down"></i
+              ></a>
+              <span id="sort-text">Sort by</span>
+            </div>
+            <div id="comment-box">
+              <div id="comment-author">
+                <a href="" class="user-name-link">
+                  <p>U</p>
+                </a>
+              </div>
+              <div id="comment-input">
+                <input
+                  type="text"
+                  name="comment"
+                  id="comment"
+                  placeholder="Add a public comment..."
+                />
+                <div id="comment-footer">
+                  <span id="emoji-button">&#128540;</span>
+                  <div id="comment-footer-buttons">
+                    <div class="comment-button-wrapper">
+                      <a href="">
+                        <button class="btn comment-btn" id="cancel-button">
+                          <span>cancel</span>
+                        </button>
+                      </a>
+                    </div>
+                    <div class="comment-button-wrapper">
+                      <a href="">
+                        <button class="btn comment-btn" id="comment-button">
+                          <span>comment</span>
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="contents">
+              <div id="comment-wrapper">
+                <div id="comment-body">
+                  <div id="author-thumbnail">
+                    <a href="" class="user-name-link">
+                      <p>U</p>
+                    </a>
+                  </div>
+                  <div id="comment-main">
+                    <div id="comment-header">
+                      <div id="header-author">
+                        <h3>
+                          <a href="" id="author-text"
+                            ><span>Author Name</span></a
+                          >
+                        </h3>
+                        <a href="" id="comment-date"
+                          ><span>5 years ago</span></a
+                        >
+                      </div>
+                    </div>
+                    <div id="comment-text">
+                      <p>
+                        Wow this video was super helpful, clear, and concise.
+                        Thank you very much.
+                      </p>
+                    </div>
+                    <div id="comment-buttons">
+                      <div id="buttons-toolbar">
+                        <div id="thumbs-up">
+                          <a href="" class="info-menu-link"
+                            ><i class="far fa-thumbs-up"></i
+                          ></a>
+                        </div>
+                        <div id="like-count">
+                          <span>34</span>
+                        </div>
+                        <div id="thumbs-down">
+                          <a href="" class="info-menu-link"
+                            ><i class="far fa-thumbs-down"></i
+                          ></a>
+                        </div>
+                        <div id="reply-button">
+                          <span>Reply</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="action-menu">
+                    <a href="" class="info-menu-link" id="action-menu-ellipsis"
+                      ><i class="fas fa-ellipsis-v"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div id="comment-wrapper">
+                <div id="comment-body">
+                  <div id="author-thumbnail">
+                    <a href="" class="user-name-link">
+                      <p>U</p>
+                    </a>
+                  </div>
+                  <div id="comment-main">
+                    <div id="comment-header">
+                      <div id="header-author">
+                        <h3>
+                          <a href="" id="author-text"
+                            ><span>Author Name</span></a
+                          >
+                        </h3>
+                        <a href="" id="comment-date"
+                          ><span>5 years ago</span></a
+                        >
+                      </div>
+                    </div>
+                    <div id="comment-text">
+                      <p>
+                        Wow this video was super helpful, clear, and concise.
+                        Thank you very much.
+                      </p>
+                    </div>
+                    <div id="comment-buttons">
+                      <div id="buttons-toolbar">
+                        <div id="thumbs-up">
+                          <a href="" class="info-menu-link"
+                            ><i class="far fa-thumbs-up"></i
+                          ></a>
+                        </div>
+                        <div id="like-count">
+                          <span>34</span>
+                        </div>
+                        <div id="thumbs-down">
+                          <a href="" class="info-menu-link"
+                            ><i class="far fa-thumbs-down"></i
+                          ></a>
+                        </div>
+                        <div id="reply-button">
+                          <span>Reply</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="action-menu">
+                    <a href="" class="info-menu-link" id="action-menu-ellipsis"
+                      ><i class="fas fa-ellipsis-v"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div id="comment-wrapper">
+                <div id="comment-body">
+                  <div id="author-thumbnail">
+                    <a href="" class="user-name-link">
+                      <p>U</p>
+                    </a>
+                  </div>
+                  <div id="comment-main">
+                    <div id="comment-header">
+                      <div id="header-author">
+                        <h3>
+                          <a href="" id="author-text"
+                            ><span>Author Name</span></a
+                          >
+                        </h3>
+                        <a href="" id="comment-date"
+                          ><span>5 years ago</span></a
+                        >
+                      </div>
+                    </div>
+                    <div id="comment-text">
+                      <p>
+                        Wow this video was super helpful, clear, and concise.
+                        Thank you very much.
+                      </p>
+                    </div>
+                    <div id="comment-buttons">
+                      <div id="buttons-toolbar">
+                        <div id="thumbs-up">
+                          <a href="" class="info-menu-link"
+                            ><i class="far fa-thumbs-up"></i
+                          ></a>
+                        </div>
+                        <div id="like-count">
+                          <span>34</span>
+                        </div>
+                        <div id="thumbs-down">
+                          <a href="" class="info-menu-link"
+                            ><i class="far fa-thumbs-down"></i
+                          ></a>
+                        </div>
+                        <div id="reply-button">
+                          <span>Reply</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="action-menu">
+                    <a href="" class="info-menu-link" id="action-menu-ellipsis"
+                      ><i class="fas fa-ellipsis-v"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div id="comment-wrapper">
+                <div id="comment-body">
+                  <div id="author-thumbnail">
+                    <a href="" class="user-name-link">
+                      <p>U</p>
+                    </a>
+                  </div>
+                  <div id="comment-main">
+                    <div id="comment-header">
+                      <div id="header-author">
+                        <h3>
+                          <a href="" id="author-text"
+                            ><span>Author Name</span></a
+                          >
+                        </h3>
+                        <a href="" id="comment-date"
+                          ><span>5 years ago</span></a
+                        >
+                      </div>
+                    </div>
+                    <div id="comment-text">
+                      <p>
+                        Wow this video was super helpful, clear, and concise.
+                        Thank you very much.
+                      </p>
+                    </div>
+                    <div id="comment-buttons">
+                      <div id="buttons-toolbar">
+                        <div id="thumbs-up">
+                          <a href="" class="info-menu-link"
+                            ><i class="far fa-thumbs-up"></i
+                          ></a>
+                        </div>
+                        <div id="like-count">
+                          <span>34</span>
+                        </div>
+                        <div id="thumbs-down">
+                          <a href="" class="info-menu-link"
+                            ><i class="far fa-thumbs-down"></i
+                          ></a>
+                        </div>
+                        <div id="reply-button">
+                          <span>Reply</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="action-menu">
+                    <a href="" class="info-menu-link" id="action-menu-ellipsis"
+                      ><i class="fas fa-ellipsis-v"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div id="comment-wrapper">
+                <div id="comment-body">
+                  <div id="author-thumbnail">
+                    <a href="" class="user-name-link">
+                      <p>U</p>
+                    </a>
+                  </div>
+                  <div id="comment-main">
+                    <div id="comment-header">
+                      <div id="header-author">
+                        <h3>
+                          <a href="" id="author-text"
+                            ><span>Author Name</span></a
+                          >
+                        </h3>
+                        <a href="" id="comment-date"
+                          ><span>5 years ago</span></a
+                        >
+                      </div>
+                    </div>
+                    <div id="comment-text">
+                      <p>
+                        Wow this video was super helpful, clear, and concise.
+                        Thank you very much.
+                      </p>
+                    </div>
+                    <div id="comment-buttons">
+                      <div id="buttons-toolbar">
+                        <div id="thumbs-up">
+                          <a href="" class="info-menu-link"
+                            ><i class="far fa-thumbs-up"></i
+                          ></a>
+                        </div>
+                        <div id="like-count">
+                          <span>34</span>
+                        </div>
+                        <div id="thumbs-down">
+                          <a href="" class="info-menu-link"
+                            ><i class="far fa-thumbs-down"></i
+                          ></a>
+                        </div>
+                        <div id="reply-button">
+                          <span>Reply</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="action-menu">
+                    <a href="" class="info-menu-link" id="action-menu-ellipsis"
+                      ><i class="fas fa-ellipsis-v"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div id="comment-wrapper">
+                <div id="comment-body">
+                  <div id="author-thumbnail">
+                    <a href="" class="user-name-link">
+                      <p>U</p>
+                    </a>
+                  </div>
+                  <div id="comment-main">
+                    <div id="comment-header">
+                      <div id="header-author">
+                        <h3>
+                          <a href="" id="author-text"
+                            ><span>Author Name</span></a
+                          >
+                        </h3>
+                        <a href="" id="comment-date"
+                          ><span>5 years ago</span></a
+                        >
+                      </div>
+                    </div>
+                    <div id="comment-text">
+                      <p>
+                        Wow this video was super helpful, clear, and concise.
+                        Thank you very much.
+                      </p>
+                    </div>
+                    <div id="comment-buttons">
+                      <div id="buttons-toolbar">
+                        <div id="thumbs-up">
+                          <a href="" class="info-menu-link"
+                            ><i class="far fa-thumbs-up"></i
+                          ></a>
+                        </div>
+                        <div id="like-count">
+                          <span>34</span>
+                        </div>
+                        <div id="thumbs-down">
+                          <a href="" class="info-menu-link"
+                            ><i class="far fa-thumbs-down"></i
+                          ></a>
+                        </div>
+                        <div id="reply-button">
+                          <span>Reply</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="action-menu">
+                    <a href="" class="info-menu-link" id="action-menu-ellipsis"
+                      ><i class="fas fa-ellipsis-v"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div id="comment-wrapper">
+                <div id="comment-body">
+                  <div id="author-thumbnail">
+                    <a href="" class="user-name-link">
+                      <p>U</p>
+                    </a>
+                  </div>
+                  <div id="comment-main">
+                    <div id="comment-header">
+                      <div id="header-author">
+                        <h3>
+                          <a href="" id="author-text"
+                            ><span>Author Name</span></a
+                          >
+                        </h3>
+                        <a href="" id="comment-date"
+                          ><span>5 years ago</span></a
+                        >
+                      </div>
+                    </div>
+                    <div id="comment-text">
+                      <p>
+                        Wow this video was super helpful, clear, and concise.
+                        Thank you very much.
+                      </p>
+                    </div>
+                    <div id="comment-buttons">
+                      <div id="buttons-toolbar">
+                        <div id="thumbs-up">
+                          <a href="" class="info-menu-link"
+                            ><i class="far fa-thumbs-up"></i
+                          ></a>
+                        </div>
+                        <div id="like-count">
+                          <span>34</span>
+                        </div>
+                        <div id="thumbs-down">
+                          <a href="" class="info-menu-link"
+                            ><i class="far fa-thumbs-down"></i
+                          ></a>
+                        </div>
+                        <div id="reply-button">
+                          <span>Reply</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="action-menu">
+                    <a href="" class="info-menu-link" id="action-menu-ellipsis"
+                      ><i class="fas fa-ellipsis-v"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div id="comment-wrapper">
+                <div id="comment-body">
+                  <div id="author-thumbnail">
+                    <a href="" class="user-name-link">
+                      <p>U</p>
+                    </a>
+                  </div>
+                  <div id="comment-main">
+                    <div id="comment-header">
+                      <div id="header-author">
+                        <h3>
+                          <a href="" id="author-text"
+                            ><span>Author Name</span></a
+                          >
+                        </h3>
+                        <a href="" id="comment-date"
+                          ><span>5 years ago</span></a
+                        >
+                      </div>
+                    </div>
+                    <div id="comment-text">
+                      <p>
+                        Wow this video was super helpful, clear, and concise.
+                        Thank you very much.
+                      </p>
+                    </div>
+                    <div id="comment-buttons">
+                      <div id="buttons-toolbar">
+                        <div id="thumbs-up">
+                          <a href="" class="info-menu-link"
+                            ><i class="far fa-thumbs-up"></i
+                          ></a>
+                        </div>
+                        <div id="like-count">
+                          <span>34</span>
+                        </div>
+                        <div id="thumbs-down">
+                          <a href="" class="info-menu-link"
+                            ><i class="far fa-thumbs-down"></i
+                          ></a>
+                        </div>
+                        <div id="reply-button">
+                          <span>Reply</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="action-menu">
+                    <a href="" class="info-menu-link" id="action-menu-ellipsis"
+                      ><i class="fas fa-ellipsis-v"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="secondary">
+        <div class="related-thumbnail">
+          <button id="all">All</button>
+          <button>Ferrari</button>
+          <button>Merc</button>
+          <button>Related</button>
+        </div>
+        <div class="thumbnail-details">
+          <iframe
+            width="168"
+            height="94"
+            src="https://www.youtube.com/embed/Z494o1lOxwY"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <div class="thumbnail-content">
+            <h3>
+              George Russell & Alex Albon | The Handover | Williams Racing
+            </h3>
+            <p>Williams Racing</p>
+            <p>194,925,476 views . Jul 30, 2018</p>
+          </div>
+        </div>
+        <div class="thumbnail-details">
+          <iframe
+            width="168"
+            height="94"
+            src="https://www.youtube.com/embed/Y7Qo9DJSUQs"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <div class="thumbnail-content">
+            <h3>2021 season recap</h3>
+            <p>Ferrari</p>
+            <p>194,925,476 views . Jul 30, 2018</p>
+          </div>
+        </div>
+        <div class="thumbnail-details">
+          <iframe
+            width="168"
+            height="94"
+            src="https://www.youtube.com/embed/gcBbzH8Vm2k"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <div class="thumbnail-content">
+            <h3>
+              Behind The Charge | The Best of 2021 with Max Verstappen and
+              Sergio Perez
+            </h3>
+            <p>Red Bull Racing</p>
+            <p>194,925,476 views . Jul 30, 2018</p>
+          </div>
+        </div>
+        <div class="thumbnail-details">
+          <iframe
+            width="168"
+            height="94"
+            src="https://www.youtube.com/embed/AL__lS856ug"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <div class="thumbnail-content">
+            <h3>Max Verstappen is 2021 Formula 1 World Champion!</h3>
+            <p>Red Bull Racing</p>
+            <p>194,925,476 views . Jul 30, 2018</p>
+          </div>
+        </div>
+        <div class="thumbnail-details">
+          <iframe
+            width="168"
+            height="94"
+            src="https://www.youtube.com/embed/EDPoXRXjaN4"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <div class="thumbnail-content">
+            <h3>Charles and Carlos special thank to the Tifosi</h3>
+            <p>Ferrari</p>
+            <p>194,925,476 views . Jul 30, 2018</p>
+          </div>
+        </div>
+        <div class="thumbnail-details">
+          <iframe
+            width="168"
+            height="94"
+            src="https://www.youtube.com/embed/3Pd4C2zzg6Y"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <div class="thumbnail-content">
+            <h3>Four teams. One launch. Save the date.</h3>
+            <p>McLaren</p>
+            <p>194,925,476 views . Jul 30, 2018</p>
+          </div>
+        </div>
+        <div class="thumbnail-details">
+          <iframe
+            width="168"
+            height="94"
+            src="https://www.youtube.com/embed/ZZwA4T2bxKM"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <div class="thumbnail-content">
+            <h3>Pato O'Ward test drives a McLaren Formula 1 car</h3>
+            <p>McLaren</p>
+            <p>194,925,476 views . Jul 30, 2018</p>
+          </div>
+        </div>
+        <div class="thumbnail-details">
+          <iframe
+            width="168"
+            height="94"
+            src="https://www.youtube.com/embed/3kMyNAI74As"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <div class="thumbnail-content">
+            <h3>BEHIND THE VISOR | Episode 15 - Breathing</h3>
+            <p>Scuderia ALphaTauri</p>
+            <p>194,925,476 views . Jul 30, 2018</p>
+          </div>
+        </div>
+        <div class="thumbnail-details">
+          <iframe
+            width="168"
+            height="94"
+            src="https://www.youtube.com/embed/ImfBp252wnI"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <div class="thumbnail-content">
+            <h3>
+              Exclusive Access: Aston Martin Cognizant F1 Team Factory Tour
+            </h3>
+            <p>Aston Martin Cognizant Formula One Team</p>
+            <p>194,925,476 views . Jul 30, 2018</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
